@@ -27,7 +27,7 @@ body{
 .header{
 	overflow: hidden;
 	background-color: white;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	border-bottom: 1px solid #ccc;
 }
 .header > div {
@@ -40,15 +40,18 @@ body{
 
 .header > div > h3{
   margin-bottom: 0px;
+ 
 }
 
 .header > img{
   float: left;
   padding-top: 30px;
 }
-
+.headerRow {
+  margin-bottom: 5px;	
+}
 .min300 {
-	min-width: 300px;
+  min-width: 300px;
 }
 
 .min100 {
@@ -70,13 +73,13 @@ body{
   color: white;
   background-color: #ccc;
   background-image: url("../img/nav_bg.png");
-  max-width: 250px;
   text-align: center;
   font-size: 1.3em;
   margin-bottom: 40px;
   margin-left: -21px;
   -webkit-border-radius: 0px 10px 10px 0px;
    border-radius: 0px 10px 10px 0px;
+    max-width: 250px; 
   
 }
 
@@ -99,6 +102,11 @@ body{
 	-webkit-box-shadow:  2px 2px 2px 2px #666;
    box-shadow:  2px 2px 2px 2px #666;
 }
-.rowMargin > li{
-	margin: 0px;
+.rowMargin{
+	margin-right: 0px;
 }
+.rowMargin li{
+  padding-right: 0px;
+}
+
+.label a{color: white;}
