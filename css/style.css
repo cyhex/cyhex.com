@@ -110,6 +110,7 @@ body{
 	-webkit-border-radius: 3px ;
    border-radius: 3px;
    padding: 0.3em;
+   margin-right: 3px;
    
 }
 .label a{color: white;}
