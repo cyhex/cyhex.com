@@ -3,7 +3,7 @@ $(document).ready(function() {
 					var _mye = atob(
 							'LXQtaS1tLW8tci1ALWMteS1oLWUteC0uLWMtby1tLQ==')
 							.replace(/-/g, '');
-					$(".email").attr('href', 'mailto:' + _mye).html(_mye);
+					$(".email").attr('href', 'mailto:' + _mye);
 					var tags = {
 						'python' : 'http://python.org',
 						'php' : 'http://php.net',
@@ -25,6 +25,13 @@ $(document).ready(function() {
 						'jqplot' : 'http://jqplot.com/',
 						'bash' : 'https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29',
 						'nltk' : 'http://nltk.org',
+						'git' :  'http://git-scm.com',
+						'svn' : 'http://subversion.apache.org/',
+					    'matplotlib' : 'http://matplotlib.org/',
+					    'solr' : 'http://lucene.apache.org/solr/',
+					    'foundation' : 'http://foundation.zurb.com/',
+					    'spring mvc' : 'http://www.springsource.org/',
+					    'aws' : 'http://aws.amazon.com'
 
 					}
 
@@ -48,6 +55,24 @@ $(document).ready(function() {
 									$(e).html(tagA)
 								}
 
-							});
+					});
+					
+					
+					$('section.top-bar-section a').click(function(){
+						$('li.toggle-topbar').click();
+						var eid = $(this).attr('href');
+						$('html, body').animate({
+					         scrollTop: $(eid).offset().top - 50
+					     }, 500);
+						return false;
+					});
+					
+					$('a.homeTrigger').click(function(){
+						$('html, body').animate({
+					         scrollTop: 1
+					     }, 500);
+						return false;
+					});
+					
 
-				});
+});
