@@ -1,8 +1,6 @@
 $(document).ready(function() {
     $(document).foundation();
-    var _mye = atob(
-            'LXQtaS1tLW8tci1ALWMteS1oLWUteC0uLWMtby1tLQ==')
-            .replace(/-/g, '');
+    var _mye = atob('LXQtaS1tLW8tci1ALWMteS1oLWUteC0uLWMtby1tLQ==').replace(/-/g, '');
     $(".email").attr('href', 'mailto:' + _mye);
     var tags = {
         'python': 'http://python.org',
